@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lily's Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <h1 class="content">Can you guess Lily's number?</h1>
+    </nav>
+    <form class ="content" onsubmit="displayGuessedNum(event)">
+        <marquee id="instructions" class="content">type any number from 0 to 100:</marquee>
+        <input id="input-number" placeholder="number"/>
+        <button>Guess</button>
+    </form>
+    <div id="guessed-num"></div>
+    <div id="result"></div>
+  </body>
+</html>
